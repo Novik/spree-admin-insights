@@ -118,7 +118,7 @@ module Spree
           },
           xAxis: { categories: chart_data[:months_name] },
           yAxis: {
-            title: { text: 'Value($)' }
+            title: { text: 'Value' }
           },
           legend: {
               layout: 'vertical',
@@ -129,7 +129,7 @@ module Spree
           series: [
             {
               name: 'Profit Loss',
-              tooltip: { valuePrefix: '$' },
+              tooltip: { valuePrefix: '' },
               data: chart_data[:profit_loss].map(&:to_f)
             }
           ]
@@ -177,9 +177,9 @@ module Spree
           },
           xAxis: { categories: chart_data[:months_name] },
           yAxis: {
-            title: { text: 'Value($)' }
+            title: { text: 'Value(₽)' }
           },
-          tooltip: { valuePrefix: '$' },
+          tooltip: { valueSuffix: '₽' },
           legend: {
               layout: 'vertical',
               align: 'right',

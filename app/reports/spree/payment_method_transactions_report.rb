@@ -69,9 +69,9 @@ module Spree
               },
               xAxis: { categories: chart_data[:months_name] },
               yAxis: {
-                title: { text: 'value($)' }
+                title: { text: 'Value(₽)' }
               },
-              tooltip: { valuePrefix: '$' },
+              tooltip: { valueSuffix: '₽' },
               legend: {
                   layout: 'vertical',
                   align: 'right',
