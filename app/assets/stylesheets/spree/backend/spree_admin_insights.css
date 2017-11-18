@@ -38,3 +38,8 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 .profit-indicator {
   color: green;
 }
+
+#table-helpers
+{
+	padding-right: 15px;
+}
