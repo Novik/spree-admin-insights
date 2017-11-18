@@ -177,9 +177,9 @@ module Spree
           },
           xAxis: { categories: chart_data[:months_name] },
           yAxis: {
-            title: { text: 'Value(₽)' }
+            title: { text: 'Value(руб)' }
           },
-          tooltip: { valueSuffix: '₽' },
+          tooltip: { valueSuffix: ' руб' },
           legend: {
               layout: 'vertical',
               align: 'right',
